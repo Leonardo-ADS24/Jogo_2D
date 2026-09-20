@@ -131,12 +131,12 @@ TextureImporter:
       name: officer_shoot_strip_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 33
-        height: 40
+        x: 0
+        y: 0
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: officer_shoot_strip_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 3
-        width: 33
-        height: 40
+        x: 38
+        y: 0
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: officer_shoot_strip_2
       rect:
         serializedVersion: 2
-        x: 75
+        x: 76
         y: 0
-        width: 40
-        height: 43
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: officer_shoot_strip_3
       rect:
         serializedVersion: 2
-        x: 92
-        y: 38
-        width: 6
-        height: 6
+        x: 114
+        y: 0
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: officer_shoot_strip_4
       rect:
         serializedVersion: 2
-        x: 120
-        y: 3
-        width: 33
-        height: 40
+        x: 152
+        y: 0
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: officer_shoot_strip_5
       rect:
         serializedVersion: 2
-        x: 158
-        y: 1
-        width: 70
-        height: 44
+        x: 190
+        y: 0
+        width: 38
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3ad5bbfaddc57ab479726680a9b5957f
     internalID: 0
     vertices: []
     indices: 
@@ -271,7 +271,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":38.0,"y":45.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       officer_shoot_strip_0: 1248691580800985997
       officer_shoot_strip_1: -9023626550118453773

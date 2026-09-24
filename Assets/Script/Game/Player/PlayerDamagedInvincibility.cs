@@ -8,6 +8,12 @@ public class PlayerDamagedInvincibility : MonoBehaviour
     [SerializeField]
     private float _invincibilityDuration;
 
+    [SerializeField]
+    private Color _flashColor;
+
+    [SerializeField]
+    private int _numberOfFlashes;
+
     private InvicibillityController _invincibilityController;
 
 
@@ -19,6 +25,6 @@ public class PlayerDamagedInvincibility : MonoBehaviour
 
     public void StartInvincibility()
     {
-        _invincibilityController.StartInvincibility(_invincibilityDuration);
+        _invincibilityController.StartInvincibility(_invincibilityDuration,_flashColor,_numberOfFlashes);
     }
 }

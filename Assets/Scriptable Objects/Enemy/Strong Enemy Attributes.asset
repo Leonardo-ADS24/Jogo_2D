@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3f1312f61c84a438891e62faff5805, type: 3}
+  m_Name: Strong Enemy Attributes
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttributes
+  <Speed>k__BackingField: 0.8
+  <RotationSpeed>k__BackingField: 50
+  <Health>k__BackingField: 30
+  <PlayerAwarenessDistance>k__BackingField: 4
+  <KillScore>k__BackingField: 20
+  <DamageAmount>k__BackingField: 20
+  <ChanceOfCollectableDrop>k__BackingField: 0.4
+  <ScreenBorder>k__BackingField: -30
+  <ObstacleCheckCircleRadius>k__BackingField: 0.45
+  <ObstacleCheckDistance>k__BackingField: 1
+  <ObstacleLayerMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 1

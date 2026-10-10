@@ -170,6 +170,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarUI
   _healthBarForegroundImage: {fileID: 526124792}
+--- !u!1001 &221921201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097052733031159452, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803609192074311427, guid: 3cd301d78991538468e53896cc897998, type: 3}
+      propertyPath: m_Name
+      value: Strong Enemy Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cd301d78991538468e53896cc897998, type: 3}
 --- !u!1001 &232779657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1878,3 +1935,4 @@ SceneRoots:
   - {fileID: 1751965205}
   - {fileID: 1344326818}
   - {fileID: 232779657}
+  - {fileID: 221921201}

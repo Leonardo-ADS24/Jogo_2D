@@ -3,25 +3,10 @@ using UnityEngine;
 
 public class EnemyMovent : MonoBehaviour
 {
-
     [SerializeField]
-    private float _speed;
+    private EnemyAttributes _enemyAttributes; 
 
-    [SerializeField]
-    private float _rotationSpeed;
-
-    
-    [SerializeField]
-    private float _screenBorder;
-
-    [SerializeField]
-    private float _obstacleCheckCircleRadius;
-
-    [SerializeField]
-    private float _obstacleCheckDistance;
-
-    [SerializeField]
-    private LayerMask _obstacleLayerMask;
+   
 
     private Rigidbody2D _rigidbody;
     private PlayerAwarenessController _playerAwarenessController;
@@ -83,14 +68,14 @@ public class EnemyMovent : MonoBehaviour
     {
         Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
 
-        if ((screenPosition.x < _screenBorder && _targetDirection.x < 0) ||
-            (screenPosition.x > _camera.pixelWidth - _screenBorder && _targetDirection.x > 0))
+        if ((screenPosition.x < _enemyAttributes.ScreenBorder && _targetDirection.x < 0) ||
+            (screenPosition.x > _camera.pixelWidth -  _enemyAttributes.ScreenBorder && _targetDirection.x > 0))
         {
             _targetDirection = new Vector2(-_targetDirection.x, _targetDirection.y);
         }
 
-        if ((screenPosition.y < _screenBorder && _targetDirection.y < 0) ||
-            (screenPosition.y > _camera.pixelHeight - _screenBorder && _targetDirection.y > 0))
+        if ((screenPosition.y < _enemyAttributes.ScreenBorder && _targetDirection.y < 0) ||
+            (screenPosition.y > _camera.pixelHeight - _enemyAttributes.ScreenBorder && _targetDirection.y > 0))
         {
             _targetDirection = new Vector2(_targetDirection.x, -_targetDirection.y);
         }
@@ -101,15 +86,15 @@ public class EnemyMovent : MonoBehaviour
         _obstacleAvoidanceCooldown -= Time.deltaTime;
 
         var contactFilter = new ContactFilter2D();
-        contactFilter.SetLayerMask(_obstacleLayerMask);
+        contactFilter.SetLayerMask(_enemyAttributes.ObstacleLayerMask);
 
         int numberOfCollisions = Physics2D.CircleCast(
             transform.position,
-            _obstacleCheckCircleRadius,
+            _enemyAttributes.ObstacleCheckCircleRadius,
             transform.up,
             contactFilter,
             _obstacleCollisions,
-            _obstacleCheckDistance);
+            _enemyAttributes.ObstacleCheckDistance);
 
         for (int i = 0; i < numberOfCollisions; i++) 
         { 
@@ -127,7 +112,7 @@ public class EnemyMovent : MonoBehaviour
             }
 
             var targetRotation = Quaternion.LookRotation(transform.forward, _obstacleAvoidanceTargetDirection);
-            var rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+            var rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _enemyAttributes.RotationSpeed * Time.deltaTime);
 
 
 
@@ -143,13 +128,13 @@ public class EnemyMovent : MonoBehaviour
     private void RotateTowardsTarget()
     {
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
-        Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+        Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation,_enemyAttributes.RotationSpeed * Time.deltaTime);
 
         _rigidbody.SetRotation(rotation);
     }
 
     private void SetVelocity()
     {
-        _rigidbody.linearVelocity = transform.up * _speed;
+        _rigidbody.linearVelocity = transform.up * _enemyAttributes.Speed;
     }
 }

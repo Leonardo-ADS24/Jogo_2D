@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: _damageAmount
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: -2936683373259129742, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
+    - target: {fileID: 234753720946772280, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
     - target: {fileID: 234753720946772280, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
       propertyPath: _chanceOfCollectableDrop
       value: 0.4
@@ -68,6 +76,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4345237508986109762, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
     - target: {fileID: 7635128111176915133, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
       propertyPath: _currentHealth
       value: 30
@@ -80,10 +92,18 @@ PrefabInstance:
       propertyPath: _killScore
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7691100298577636401, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
     - target: {fileID: 7865965366148141774, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
       propertyPath: m_Name
       value: Strong Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7896843524661806752, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
     - target: {fileID: 7896843524661806752, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
       propertyPath: _playerAwarenessDistance
       value: 4
@@ -96,6 +116,10 @@ PrefabInstance:
       propertyPath: _rotationSpeed
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 9003159645658941566, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _enemyAttributes
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

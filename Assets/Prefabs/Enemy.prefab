@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 234753720946772280}
   - component: {fileID: -7354247804549602788}
   - component: {fileID: 2662064387834602601}
+  - component: {fileID: 4345237508986109762}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -175,14 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c09336486e433448571bb5097d1c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovent
-  _speed: 1
-  _rotationSpeed: 100
-  _screenBorder: -30
-  _obstacleCheckCircleRadius: 0.45
-  _obstacleCheckDistance: 1
-  _obstacleLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}
 --- !u!114 &7896843524661806752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f96a7d321754745a1219760946c6c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAwarenessController
-  _playerAwarenessDistance: 5
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}
 --- !u!58 &3414161999871918581
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -244,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a26e999154c45d44ba2c423ff490c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
-  _damageAmount: 10
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}
 --- !u!95 &5667433549725329006
 Animator:
   serializedVersion: 7
@@ -398,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f0cf1bbd9fdf145a2de9a881079c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyScoreAllocator
-  _killScore: 10
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}
 --- !u!114 &234753720946772280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12108da549abf4b4e8c5854da7e2a0a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollectableDrop
-  _chanceOfCollectableDrop: 0.2
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}
 --- !u!114 &-7354247804549602788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,3 +433,16 @@ MonoBehaviour:
   _flashDuration: 0.2
   _flashColor: {r: 1, g: 0, b: 0, a: 1}
   _numberOfFlashes: 1
+--- !u!114 &4345237508986109762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865965366148141774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e682281b6724f9242ae0c6a93680a5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnController
+  _enemyAttributes: {fileID: 11400000, guid: ca1a5da03e02f504ab7ed06c169a6c00, type: 2}

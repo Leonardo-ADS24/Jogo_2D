@@ -4,7 +4,7 @@ public class EnemyAttack : MonoBehaviour
 {
 
     [SerializeField]
-    private float _damageAmount;
+    private EnemyAttributes _enemyAttributes;
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -12,7 +12,7 @@ public class EnemyAttack : MonoBehaviour
         {
             var healthController = collision.gameObject.GetComponent<HealthController>();
 
-            healthController.TakeDamage(_damageAmount);
+            healthController.TakeDamage(_enemyAttributes.DamageAmount);
         }
     }
 

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1710270330662925531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2936683373259129742, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _damageAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 234753720946772280, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _chanceOfCollectableDrop
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748197537437024821, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635128111176915133, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _currentHealth
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635128111176915133, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _maximumHealth
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691100298577636401, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _killScore
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865965366148141774, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_Name
+      value: Strong Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896843524661806752, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _playerAwarenessDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003159645658941566, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _speed
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003159645658941566, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: _rotationSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}

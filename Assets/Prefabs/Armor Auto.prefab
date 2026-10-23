@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armor Auto
       objectReference: {fileID: 0}
+    - target: {fileID: 1315493872319578883, guid: cb2fc8f9b5a59bb4089e4e605efbf639, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3331404763367575524, guid: cb2fc8f9b5a59bb4089e4e605efbf639, type: 3}
       propertyPath: m_Size.x
       value: 1.8810403

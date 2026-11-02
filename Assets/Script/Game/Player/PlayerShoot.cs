@@ -15,6 +15,10 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private float _timeBetweenShots;
 
+    [SerializeField]
+    private bool _autoFire;
+
+
     private bool _fireContinuously;
     private bool _fireSingle;
     private float _lastFireTime;
@@ -22,7 +26,7 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_fireContinuously || _fireSingle)
+        if(_autoFire || _fireContinuously || _fireSingle)
         {
             float timeSinceLastFire = Time.time - _lastFireTime;
 

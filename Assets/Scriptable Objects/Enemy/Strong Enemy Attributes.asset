@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttributes
   <Speed>k__BackingField: 0.8
   <RotationSpeed>k__BackingField: 50
-  <Health>k__BackingField: 30
+  <Health>k__BackingField: 50
   <PlayerAwarenessDistance>k__BackingField: 4
   <KillScore>k__BackingField: 20
   <DamageAmount>k__BackingField: 20

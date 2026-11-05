@@ -4,6 +4,8 @@ public class Bullet : MonoBehaviour
 {
     private Camera _camera;
 
+    public int Damage { get; set; } = 10;
+
     private void Awake()
     {
         _camera = Camera.main;
@@ -19,7 +21,8 @@ public class Bullet : MonoBehaviour
         if (collision.GetComponent<EnemyMovent>())
         {
             HealthController healthController = collision.GetComponent<HealthController>();
-            healthController.TakeDamage(10);
+            //healthController.TakeDamage(10);
+            healthController.TakeDamage(Damage);
             Destroy(gameObject);
         }
     }

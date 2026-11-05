@@ -1795,6 +1795,8 @@ MonoBehaviour:
   _collectablePrefabs:
   - {fileID: 1375333760022381829, guid: 82817b88dac0a7343978bcb6dd9a96f5, type: 3}
   - {fileID: 1577600327668320187, guid: fcbde5e5da964554cb02990eb7094d3a, type: 3}
+  - {fileID: 2643369720782695534, guid: a246b6e04a13d80428808eb41f388db5, type: 3}
+  - {fileID: 8544870949905193128, guid: 5f5a94f2793e2ba4da040a6c8a4675a7, type: 3}
 --- !u!4 &1751965205
 Transform:
   m_ObjectHideFlags: 0

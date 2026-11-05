@@ -22,6 +22,11 @@ public class PlayerShoot : MonoBehaviour
     private bool _fireContinuously;
     private bool _fireSingle;
     private float _lastFireTime;
+    //
+    private int _damage = 10;
+    private GameObject _defaultBulletPrefab;
+
+
 
     // Update is called once per frame
     void Update()
@@ -43,6 +48,7 @@ public class PlayerShoot : MonoBehaviour
     private void FireBullet()
     {
         GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
+        bullet.GetComponent<Bullet>().Damage = _damage;
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 
         rigidbody.linearVelocity = _bulletSpeed * transform.up;
@@ -57,5 +63,19 @@ public class PlayerShoot : MonoBehaviour
             _fireSingle = true;
         }
 
+    }
+
+    //
+    private void Awake()
+    {
+        _defaultBulletPrefab = _bulletPrefab;
+    }
+
+    public void EquipWeapon(WeaponData weapon)
+    {
+        _damage = weapon.Damage;
+        _timeBetweenShots = weapon.TimeBetweenShots;
+        _bulletSpeed = weapon.BulletSpeed;
+        _bulletPrefab = weapon.BulletPrefab != null ? weapon.BulletPrefab : _defaultBulletPrefab;
     }
 }

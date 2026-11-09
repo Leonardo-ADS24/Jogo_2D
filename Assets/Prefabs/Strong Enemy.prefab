@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: _enemyAttributes
       value: 
       objectReference: {fileID: 11400000, guid: 6e7c09b5cfbb2444e9466ddb7b7468e3, type: 2}
+    - target: {fileID: 5667433549725329006, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: f1ee55430cafa6f47aae2217a43b7b71, type: 2}
     - target: {fileID: 7635128111176915133, guid: 807b4cab0d46a8142bc26488967fd715, type: 3}
       propertyPath: _currentHealth
       value: 50

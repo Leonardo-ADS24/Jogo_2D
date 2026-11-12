@@ -224,11 +224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6994768286015067209, guid: 3cd301d78991538468e53896cc897998, type: 3}
       propertyPath: _maximumSpawnTime
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6994768286015067209, guid: 3cd301d78991538468e53896cc897998, type: 3}
       propertyPath: _minimumSpawnTime
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1333,11 +1333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6994768286015067209, guid: 3cd301d78991538468e53896cc897998, type: 3}
       propertyPath: _maximumSpawnTime
-      value: 14
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6994768286015067209, guid: 3cd301d78991538468e53896cc897998, type: 3}
       propertyPath: _minimumSpawnTime
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

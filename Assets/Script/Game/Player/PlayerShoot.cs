@@ -25,6 +25,10 @@ public class PlayerShoot : MonoBehaviour
     //
     private int _damage = 10;
     private GameObject _defaultBulletPrefab;
+    private int _projectilesPerShot = 1;
+    private float _spreadAngle = 0f;
+    private float _bulletLifetime = 0f;
+
 
 
 
@@ -47,22 +51,29 @@ public class PlayerShoot : MonoBehaviour
 
     private void FireBullet()
     {
-        GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
-        bullet.GetComponent<Bullet>().Damage = _damage;
-        Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
+        for (int i = 0; i < _projectilesPerShot; i++)
+        {
+            // distribui os projéteis de forma uniforme dentro do leque
+            float angleOffset = 0f;
+            if (_projectilesPerShot > 1)
+            {
+                float t = i / (float)(_projectilesPerShot - 1);   // vai de 0 a 1
+                angleOffset = Mathf.Lerp(-_spreadAngle / 2f, _spreadAngle / 2f, t);
+            }
 
-        rigidbody.linearVelocity = _bulletSpeed * transform.up;
-    }
+            Quaternion rotation = transform.rotation * Quaternion.Euler(0f, 0f, angleOffset);
 
-    private void OnFire(InputValue inputValue)
-    {
-        _fireContinuously = inputValue.isPressed;
+            GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, rotation);
+            bullet.GetComponent<Bullet>().Damage = _damage;
 
-        if (inputValue.isPressed) 
-        { 
-            _fireSingle = true;
+            Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
+            rigidbody.linearVelocity = _bulletSpeed * (rotation * Vector3.up);
+
+            if (_bulletLifetime > 0f)
+            {
+                Destroy(bullet, _bulletLifetime);   // limita o alcance
+            }
         }
-
     }
 
     //
@@ -77,5 +88,9 @@ public class PlayerShoot : MonoBehaviour
         _timeBetweenShots = weapon.TimeBetweenShots;
         _bulletSpeed = weapon.BulletSpeed;
         _bulletPrefab = weapon.BulletPrefab != null ? weapon.BulletPrefab : _defaultBulletPrefab;
+
+        _projectilesPerShot = weapon.ProjectilesPerShot;   // novas
+        _spreadAngle = weapon.SpreadAngle;
+        _bulletLifetime = weapon.BulletLifetime;
     }
 }

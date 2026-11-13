@@ -93,7 +93,7 @@ PrefabInstance:
       addedObject: {fileID: 901287623183352358}
     - targetCorrespondingSourceObject: {fileID: 1315493872319578883, guid: cb2fc8f9b5a59bb4089e4e605efbf639, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5101655878399521565}
+      addedObject: {fileID: 6872126642659105337}
   m_SourcePrefab: {fileID: 100100000, guid: cb2fc8f9b5a59bb4089e4e605efbf639, type: 3}
 --- !u!1 &2643369720782695534 stripped
 GameObject:
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponCollectableBehaviour
   _weapon: {fileID: 11400000, guid: 8c60b5c2318c1154cbf84a8b78116550, type: 2}
---- !u!82 &-5101655878399521565
+--- !u!82 &6872126642659105337
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

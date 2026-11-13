@@ -1792,12 +1792,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c881e5b9f4298db429e7f6283cf3ad62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableSpawner
-  _collectablePrefabs:
-  - {fileID: 1375333760022381829, guid: 82817b88dac0a7343978bcb6dd9a96f5, type: 3}
-  - {fileID: 1577600327668320187, guid: fcbde5e5da964554cb02990eb7094d3a, type: 3}
-  - {fileID: 2643369720782695534, guid: a246b6e04a13d80428808eb41f388db5, type: 3}
-  - {fileID: 8544870949905193128, guid: 5f5a94f2793e2ba4da040a6c8a4675a7, type: 3}
-  - {fileID: 206280153565160564, guid: aee6d6b8ba1b2a247acdf4687caac4e8, type: 3}
+  _drops:
+  - Prefab: {fileID: 1375333760022381829, guid: 82817b88dac0a7343978bcb6dd9a96f5, type: 3}
+    Weight: 35
+  - Prefab: {fileID: 8544870949905193128, guid: 5f5a94f2793e2ba4da040a6c8a4675a7, type: 3}
+    Weight: 20
+  - Prefab: {fileID: 206280153565160564, guid: aee6d6b8ba1b2a247acdf4687caac4e8, type: 3}
+    Weight: 20
+  - Prefab: {fileID: 2643369720782695534, guid: a246b6e04a13d80428808eb41f388db5, type: 3}
+    Weight: 15
+  - Prefab: {fileID: 1577600327668320187, guid: fcbde5e5da964554cb02990eb7094d3a, type: 3}
+    Weight: 10
 --- !u!4 &1751965205
 Transform:
   m_ObjectHideFlags: 0

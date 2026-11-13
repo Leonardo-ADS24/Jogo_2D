@@ -18,7 +18,7 @@ MonoBehaviour:
   <PlayerAwarenessDistance>k__BackingField: 5
   <KillScore>k__BackingField: 10
   <DamageAmount>k__BackingField: 10
-  <ChanceOfCollectableDrop>k__BackingField: 0.2
+  <ChanceOfCollectableDrop>k__BackingField: 0.806
   <ScreenBorder>k__BackingField: -30
   <ObstacleCheckCircleRadius>k__BackingField: 0.5
   <ObstacleCheckDistance>k__BackingField: 1

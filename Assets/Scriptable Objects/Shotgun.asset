@@ -21,3 +21,5 @@ MonoBehaviour:
   <ProjectilesPerShot>k__BackingField: 5
   <SpreadAngle>k__BackingField: 40
   <BulletLifetime>k__BackingField: 0.6
+  <ShotSound>k__BackingField: {fileID: 8300000, guid: a16a5b97bff829041b2e47d4db898a4a, type: 3}
+  <ShotVolume>k__BackingField: 0.85

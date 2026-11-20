@@ -18,3 +18,8 @@ MonoBehaviour:
   <TimeBetweenShots>k__BackingField: 0.12
   <BulletSpeed>k__BackingField: 9
   <BulletPrefab>k__BackingField: {fileID: 0}
+  <ProjectilesPerShot>k__BackingField: 1
+  <SpreadAngle>k__BackingField: 0
+  <BulletLifetime>k__BackingField: 0
+  <ShotSound>k__BackingField: {fileID: 8300000, guid: 2be01acc6a1372c41a9b9e6a00fa3362, type: 3}
+  <ShotVolume>k__BackingField: 0.115

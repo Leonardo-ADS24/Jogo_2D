@@ -12,5 +12,7 @@ public class WeaponData : ScriptableObject
     [field: SerializeField] public int ProjectilesPerShot { get; private set; } = 1;
     [field: SerializeField] public float SpreadAngle { get; private set; } = 0f;      // 
     [field: SerializeField] public float BulletLifetime { get; private set; } = 0f;   // 
+    [field: SerializeField] public AudioClip ShotSound { get; private set; }
+    [field: SerializeField, Range(0f, 1f)] public float ShotVolume { get; private set; } = 1f;
 
 }

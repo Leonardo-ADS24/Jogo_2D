@@ -1084,6 +1084,7 @@ MonoBehaviour:
   _gunOffset: {fileID: 281239572}
   _timeBetweenShots: 0.3
   _autoFire: 1
+  _defaultShotSound: {fileID: 8300000, guid: c71227404781e1c4f8d407b178257d58, type: 3}
 --- !u!114 &673635154
 MonoBehaviour:
   m_ObjectHideFlags: 0

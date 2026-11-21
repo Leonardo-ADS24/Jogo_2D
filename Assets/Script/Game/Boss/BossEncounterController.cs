@@ -61,7 +61,9 @@ public class BossEncounterController : MonoBehaviour
             _warningObject.SetActive(false);
         }
 
-        Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.identity);
+        //Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.identity);
+        Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.Euler(0f, 0f, 180f));
+
     }
 
     private void ClearEnemies()

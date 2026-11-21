@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000293ced1d09c5a5d83fa5e1b4db650290773bdb9d
+  m_ApplyToSortingLayers: 00000000293ced1d09c5a5d83fa5e1b4db650290773bdb9d17633cdb
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1889,7 +1889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e37344cb200324d97c2f8d64f9dd49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HordeTimer
-  _durationInSeconds: 180
+  _durationInSeconds: 30
   OnTimeChanged:
     m_PersistentCalls:
       m_Calls:

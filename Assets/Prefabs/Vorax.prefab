@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -616799465
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5608395134523865048, guid: f8d3400d19502074c8880dae009a5492, type: 3}
@@ -105,7 +105,10 @@ GameObject:
   - component: {fileID: 7693074442382992112}
   - component: {fileID: 4195639214952752891}
   - component: {fileID: 294267577121294557}
-  m_Layer: 0
+  - component: {fileID: 1117180010548615240}
+  - component: {fileID: 484373769277985915}
+  - component: {fileID: 6221349859535841687}
+  m_Layer: 3
   m_Name: Vorax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +193,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.5
+  m_Radius: 1.1
 --- !u!114 &4195639214952752891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +234,53 @@ MonoBehaviour:
   OnEntranceFinished:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1117180010548615240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047951960221142645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d5c8b82d95d144b3aa13b897d8c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossMovement
+  _speed: 1.5
+  _rotationSpeed: 80
+  _stopDistance: 3.5
+--- !u!114 &484373769277985915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047951960221142645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f56e2129c803c4ca3caaa93c257a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossContactDamage
+  _damage: 20
+--- !u!95 &6221349859535841687
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047951960221142645}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c2d28b821a99b3498c1ec04bb37a301, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

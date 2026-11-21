@@ -17,6 +17,16 @@ public class BossEncounterController : MonoBehaviour
     [SerializeField]
     private Transform _bossSpawnPoint;
 
+    [SerializeField]
+    private string _bossName = "VORAX";
+
+    [Header("Interface")]
+    [SerializeField]
+    private BossHealthBarUI _bossHealthBar;
+
+    [SerializeField]
+    private VictoryController _victoryController;
+
     [Header("Aviso")]
     [SerializeField]
     private GameObject _warningObject;
@@ -61,9 +71,18 @@ public class BossEncounterController : MonoBehaviour
             _warningObject.SetActive(false);
         }
 
-        //Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.identity);
-        Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.Euler(0f, 0f, 180f));
+        GameObject boss = Instantiate(_bossPrefab, _bossSpawnPoint.position, Quaternion.Euler(0f, 0f, 180f));
+        HealthController bossHealth = boss.GetComponent<HealthController>();
 
+        if (_bossHealthBar != null)
+        {
+            _bossHealthBar.Show(bossHealth, _bossName);
+        }
+
+        if (_victoryController != null)
+        {
+            bossHealth.OnDie.AddListener(_victoryController.OnBossDefeated);
+        }
     }
 
     private void ClearEnemies()

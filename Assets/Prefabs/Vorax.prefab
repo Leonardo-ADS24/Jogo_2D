@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 1117180010548615240}
   - component: {fileID: 484373769277985915}
   - component: {fileID: 6221349859535841687}
+  - component: {fileID: 1900479926361339939}
   m_Layer: 3
   m_Name: Vorax
   m_TagString: Untagged
@@ -129,6 +130,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7239705239680567804}
+  - {fileID: 6250164210664899299}
+  - {fileID: 4301658297550724361}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &185802120495105098
@@ -210,7 +213,19 @@ MonoBehaviour:
   _maximumHealth: 1000
   OnDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1900479926361339939}
+        m_TargetAssemblyTypeName: BossAttackController, Assembly-CSharp
+        m_MethodName: OnBossDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -233,7 +248,19 @@ MonoBehaviour:
   _entranceDuration: 3
   OnEntranceFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1900479926361339939}
+        m_TargetAssemblyTypeName: BossAttackController, Assembly-CSharp
+        m_MethodName: StartFight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117180010548615240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,3 +311,95 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1900479926361339939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047951960221142645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea417688117babc4386f2ef26da3eabc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAttackController
+  _muzzles:
+  - {fileID: 6250164210664899299}
+  - {fileID: 4301658297550724361}
+  _projectilePrefab: {fileID: 7248302862909834882, guid: a3f777b6f6bb7fb4d9f57cc8d0dd8266, type: 3}
+  _slamWarningPrefab: {fileID: 2606210138690355517, guid: 9c55e3b187d13e849900c319c65ea0b7, type: 3}
+  _graphics: {fileID: 2164657377351890841}
+  _projectileSpeed: 6
+  _projectileDamage: 15
+  _burstShots: 6
+  _burstInterval: 0.25
+  _fanProjectiles: 7
+  _fanAngle: 90
+  _slamRadius: 4
+  _slamWarningTime: 1
+  _slamDamage: 30
+  _telegraphTime: 0.7
+  _restTime: 1.5
+  _phaseTwoHealth: 0.5
+--- !u!1 &5439621001378985015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4301658297550724361}
+  m_Layer: 3
+  m_Name: Muzzle Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4301658297550724361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439621001378985015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 1.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2828367135946195729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7761624941027263436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6250164210664899299}
+  m_Layer: 3
+  m_Name: Muzzle Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6250164210664899299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761624941027263436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.66, y: 1.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2828367135946195729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
